@@ -20,6 +20,7 @@
     }
   ],
   "permissions": [
+    "storage",
     "webRequest",
     "webRequestBlocking",
     "https://*.youtube.com/*"
