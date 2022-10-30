@@ -1,0 +1,32 @@
+{
+  "description": "Blocks YouTube suggestions and search results from verified channels",
+  "manifest_version": 2,
+  "name": "Deverify",
+  "version": "1.0",
+  "homepage_url": "https://github.com/ravenstine/Deverify",
+  "icons": {
+    "48": "icons/enabled.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/enabled.png"
+    },
+    "default_title": "Deverify"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
