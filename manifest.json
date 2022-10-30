@@ -20,11 +20,9 @@
     }
   ],
   "permissions": [
-    "storage",
-    "tabs",
     "webRequest",
     "webRequestBlocking",
-    "<all_urls>"
+    "https://*.youtube.com/*"
   ],
   "background": {
     "scripts": ["background.js"]
